@@ -76,4 +76,3 @@ Several open-source and commercial tools offer features that overlap with your p
 - **Weights & Biases** offers a comprehensive and real-time approach to experiment tracking and visualization, which could inspire some of the features you want to develop.
 - On the commercial side, **Neptune.ai** and **Comet.ml** offer robust, user-friendly interfaces that could provide valuable insights into how to structure and present data for the statistics site you want to build.
 
-Would you like to explore a specific name further or dive deeper into the features of any of these existing tools? Or shall we proceed with the development phase?

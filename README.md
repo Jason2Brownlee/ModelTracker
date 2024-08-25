@@ -14,6 +14,9 @@ Developed in collaboration with ChatGPT4o in August 2024.
 
 1. **Clone the Repository**:
    Clone the GitHub repository to your local machine.
+   ```bash
+   git clone git@github.com:Jason2Brownlee/ModelTracker.git
+   ```
 
 2. **Install Dependencies**:
    Ensure that you have Python 3 installed, along with the required libraries:
