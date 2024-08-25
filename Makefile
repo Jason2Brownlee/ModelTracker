@@ -13,8 +13,7 @@ create-database:
 
 # Target to add a sample experiment
 add-experiments:
-# 	$(PYTHON) $(SRC_DIR)/experiment_manager.py
-	$(PYTHON) $(SRC_DIR)/add_classifiers_default_params.py
+	$(PYTHON) $(SRC_DIR)/add_classifiers_default_params.py $(DATA_DIR)/$(DB_NAME)
 
 # Target to run pending experiments
 run-experiments:

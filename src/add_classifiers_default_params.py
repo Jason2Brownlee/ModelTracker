@@ -1,5 +1,4 @@
-# add all main sklearn classifiers with default hyperparameters
-
+# add popular sklearn classifiers with default hyperparameters
 
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
@@ -10,6 +9,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from experiment_manager import ExperimentManager
+import argparse
 
 # List of classifiers with their names
 classifiers = {
@@ -41,6 +41,11 @@ def add_classification_experiments(db_path):
         )
 
 if __name__ == "__main__":
-    db_path = "data/experiments.db"  # Path to your database
-    add_classification_experiments(db_path)
+    parser = argparse.ArgumentParser(description="Run untested experiments from the database.")
+    parser.add_argument("db_path", type=str, help="Path to the SQLite database file.")
+
+    args = parser.parse_args()
+
+    add_classification_experiments(db_path=args.db_path)
+
     print("All classification experiments added successfully.")
