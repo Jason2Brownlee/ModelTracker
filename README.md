@@ -88,6 +88,6 @@ To customize your dataset loading, resampling method, and evaluation metric, edi
 * Add a script that inserts a grid search experiments of common hyperparameters for common classifications algorithms.
 * Write a script/bash snippet/make target that polls the database for top scores that can be run in a shell while experiments are running.
 * Perhaps add a one-age website that gives a live review scores and plots.
-
+* Plot of model score vs time.
 
 
